@@ -72,7 +72,7 @@ variable "lua-modules-debian" {
 
 variable "REPOS" {
     # List of repositories to tag
-    default = "owasp/modsecurity-crs, ghcr.io/coreruleset/modsecurity-crs"
+    default = "xx4h/modsecurity-crs, ghcr.io/xx4h/modsecurity-crs"
 }
 
 variable "nginx-dynamic-modules" {
@@ -123,7 +123,7 @@ target "platforms-base" {
     context="."
     platforms = ["linux/amd64", "linux/arm64", "linux/i386"]
     labels = {
-        "org.opencontainers.image.source" = "https://github.com/coreruleset/modsecurity-crs-docker"
+        "org.opencontainers.image.source" = "https://github.com/xx4h/modsecurity-crs-docker"
     }
     args = {
         MODSEC2_VERSION = "${modsec2-version}"
